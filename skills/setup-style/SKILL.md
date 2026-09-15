@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: setup-style
 description: "Bootstrap or refine your writing style guides. Pulls writing samples, analyzes patterns, writes high-level voice + medium-specific style files. Reads cortex's `/setup-voice` output as baseline if present. Re-run anytime to refresh."
 ---
