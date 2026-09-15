@@ -1,10 +1,10 @@
 {
-  "name": "writing-style",
-  "version": "0.1.5",
-  "description": "Adaptive writing-style plugin. Learns your voice over time from real edits. Draft-first workflow for emails, posts, docs. Detects patterns across 2+ recurrences before committing style-guide updates. Companion to cortex's /setup-voice — one-time capture + continuous learning.",
+  "name": "voice",
+  "version": "0.2.0",
+  "description": "Adaptive writing-voice plugin (renamed from writing-style, 2026-09-15). Learns your voice over time from real edits. Draft-first workflow for emails, posts, docs. Detects patterns across 2+ recurrences before committing style-guide updates. Companion to cortex's /setup-voice — one-time capture + continuous learning.",
   "author": {
     "name": "BrightWay AI"
   },
   "license": "MIT",
-  "repository": "https://github.com/BrightWayAI/writing-style"
+  "repository": "https://github.com/BrightWayAI/voice"
 }

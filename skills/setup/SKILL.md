@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Bootstrap writing-style's analysis of your voice. Auto-fires on "/setup-style", "set up writing style", "analyze my writing voice", "bootstrap my style guide", or when /style reports that voice or style files are missing. Pulls 5-10 writing samples (from Gmail/Drive if available, else asks the user to paste), analyzes patterns, writes voice + medium-specific style files.
+description: Bootstrap voice's analysis of your voice. Auto-fires on "/setup-style", "set up writing style", "analyze my writing voice", "bootstrap my style guide", or when /style reports that voice or style files are missing. Pulls 5-10 writing samples (from Gmail/Drive if available, else asks the user to paste), analyzes patterns, writes voice + medium-specific style files.
 ---
 
 <!-- OPENAI-ADAPTER:START -->

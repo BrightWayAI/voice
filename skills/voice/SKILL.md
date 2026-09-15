@@ -1,5 +1,5 @@
 ---
-name: writing-style
+name: voice
 description: >-
   Draft or revise anything in your voice: email, reply, social post, Slack or DM message, intro, follow-up, thank-you note, document, blurb, bio, or comment. Fires on requests to write, draft, compose, reply, respond, reword, rewrite, revise, polish, tighten, shorten, or make human-facing prose sound like the user, even when the medium is unstated. Reads shared voice and medium-specific style files. Drafts go for review and are never sent directly. Does not fire for code, internal memory notes, or plain data.
 ---

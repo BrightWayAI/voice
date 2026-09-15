@@ -1,5 +1,5 @@
 ---
-description: Draft something in your voice — email, social post, doc, message. Reads `<config-root>/memory/me/voice.md` (canonical voice from cortex setup-voice) plus medium-specific style files (`<config-root>/style-{medium}.md` from writing-style). Presents as draft for review; never sends directly.
+description: Draft something in your voice — email, social post, doc, message. Reads `<config-root>/memory/me/voice.md` (canonical voice from cortex setup-voice) plus medium-specific style files (`<config-root>/style-{medium}.md` from voice). Presents as draft for review; never sends directly.
 ---
 
 # /style [medium] [purpose]
@@ -22,7 +22,7 @@ Then read:
 - `<config-root>/memory/me/identity.md` — for name, title, company (signature material)
 - `<config-root>/memory/me/voice.md` — canonical high-level voice (descriptors, banned phrases, hook patterns)
 - `<config-root>/style-{medium}.md` — medium-specific style file if the user is drafting in a known medium
-- `<config-root>/plugins/writing-style.user-context.md` — plugin config
+- `<config-root>/plugins/voice.user-context.md` — plugin config
 
 If `voice.md` is missing, suggest running `/setup-voice` (cortex) or `/setup-style` first.
 
@@ -47,7 +47,7 @@ If the user just said "draft an email" without specifics, ask one clarifying que
 Apply, in priority order:
 
 1. **Voice descriptors and banned phrases** from `voice.md` (cortex baseline)
-2. **Medium-specific rules** from `style-{medium}.md` (writing-style refinements)
+2. **Medium-specific rules** from `style-{medium}.md` (voice refinements)
 3. **Inferred patterns from recent samples** if the user has been writing a lot in this medium recently (use cortex memory or sample cache to inform)
 4. **The user's purpose and audience** — override any rule if context demands
 
@@ -98,7 +98,7 @@ Review and let me know:
 If the user says "change X to Y" or provides edits in chat:
 
 1. Apply changes
-2. Note the change in working memory (writing-style will analyze later via `/style-learn`)
+2. Note the change in working memory (voice will analyze later via `/style-learn`)
 3. Re-present the updated draft
 
 If the user says "good to go" or signals approval:

@@ -1,6 +1,6 @@
-# writing-style user context (TEMPLATE)
+# voice user context (TEMPLATE)
 
-_Run `/setup-style` to generate your real `<config-root>/plugins/writing-style.user-context.md` (gitignored)._
+_Run `/setup-style` to generate your real `<config-root>/plugins/voice.user-context.md` (gitignored)._
 
 _Last updated: [filled by setup]_
 

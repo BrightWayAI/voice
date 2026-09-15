@@ -13,8 +13,8 @@ Periodic audit of `<config-root>/memory/me/voice.md` and `<config-root>/style-*.
 Read `~/Documents/.claude-plugin-config-root`. Read:
 - `<config-root>/memory/me/voice.md`
 - All `<config-root>/style-*.md` files
-- `<config-root>/plugins/writing-style.history.md` (the pattern-history log from `/style-learn`)
-- `<config-root>/plugins/writing-style.user-context.md`
+- `<config-root>/plugins/voice.history.md` (the pattern-history log from `/style-learn`)
+- `<config-root>/plugins/voice.user-context.md`
 
 ---
 
@@ -53,7 +53,7 @@ For each unvalidated rule:
 
 ## Step 3 — Surface uncommitted patterns
 
-Read `writing-style.history.md`. Find patterns that have recurred 2+ times but were NOT committed (user skipped).
+Read `voice.history.md`. Find patterns that have recurred 2+ times but were NOT committed (user skipped).
 
 For each:
 

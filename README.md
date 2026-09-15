@@ -1,6 +1,6 @@
-# writing-style
+# voice
 
-Adaptive writing-style plugin for Claude. Learns your voice from real edits over time, in addition to whatever you captured up front via cortex's `/setup-voice`.
+Adaptive voice plugin for Claude. Learns your voice from real edits over time, in addition to whatever you captured up front via cortex's `/setup-voice`.
 
 ## What it does
 
@@ -13,13 +13,13 @@ Adaptive writing-style plugin for Claude. Learns your voice from real edits over
 
 ## How it works with the rest of the marketplace
 
-| Plugin | What it does | How writing-style integrates |
+| Plugin | What it does | How voice integrates |
 |---|---|---|
-| **cortex `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns) | Baseline. writing-style refines over time on top of this. |
+| **cortex `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns) | Baseline. voice refines over time on top of this. |
 | **bizdev-outreach** | Drafts per-contact outreach | When you edit a draft before sending, run `/style-learn` to feed the pattern back. |
 | **lead-engine `/lead-draft`** | Drafts 3-touch DM cadence | Same — `/style-learn` after you tweak. |
 | **news-curator `post-assembler`** | Drafts LinkedIn roundup posts | Same — `/style-learn` after you publish your edited version. |
-| **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by writing-style). |
+| **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by voice). |
 
 ## Install
 
@@ -27,7 +27,7 @@ Recommended: via the [BrightWayAI marketplace](https://github.com/BrightWayAI/nu
 
 ```
 /plugin marketplace add BrightWayAI/nucleus
-/plugin install writing-style@nucleus
+/plugin install voice@nucleus
 ```
 
 ## First-time setup
@@ -41,11 +41,11 @@ Run `/setup-style`. The interview:
 
 Saved at:
 - `<config-root>/memory/me/voice.md` — high-level voice (shared with all drafters)
-- `<config-root>/style-email.md` — email-specific (writing-style only)
+- `<config-root>/style-email.md` — email-specific (voice only)
 - `<config-root>/style-social.md` — social-specific
 - `<config-root>/style-{medium}.md` — any other medium
 
-Plus plugin config at `<config-root>/plugins/writing-style.user-context.md` (edit-detection paths, confidence threshold, per-medium tracking opt-ins).
+Plus plugin config at `<config-root>/plugins/voice.user-context.md` (edit-detection paths, confidence threshold, per-medium tracking opt-ins).
 
 ## Commands
 
@@ -59,9 +59,9 @@ Plus plugin config at `<config-root>/plugins/writing-style.user-context.md` (edi
 <!-- OPENAI-SUPPORT:START -->
 ## ChatGPT and Codex
 
-Writing Style ships as a native OpenAI plugin as well as a Claude plugin. In
-ChatGPT desktop Local Work, enable **Writing Style** and ask naturally or mention
-`@Writing Style`. In Codex, use natural language or the namespaced skills exposed
+Voice ships as a native OpenAI plugin as well as a Claude plugin. In
+ChatGPT desktop Local Work, enable **Voice** and ask naturally or mention
+`@Voice`. In Codex, use natural language or the namespaced skills exposed
 by the plugin. Claude slash-command names in this README remain workflow aliases.
 
 All hosts resolve the same `<config-root>` used by Cortex, so Claude, ChatGPT desktop,

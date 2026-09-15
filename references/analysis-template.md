@@ -28,7 +28,7 @@ Used by `/style-learn` to structure the diff between a draft and the version the
 
 Before proposing a commit:
 
-- [ ] Seen this change before? (check `<config-root>/plugins/writing-style.history.md`)
+- [ ] Seen this change before? (check `<config-root>/plugins/voice.history.md`)
 - [ ] Affects tone, structure, or word choice?
 - [ ] Specific to this medium or universal?
 - [ ] First occurrence → log to history only, don't commit yet

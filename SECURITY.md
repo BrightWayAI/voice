@@ -2,7 +2,7 @@
 
 ## What this plugin does with your data
 
-writing-style learns your writing voice from real edits over time. Read-only against your existing content; writes only style-guide files plus drafts you review before sending.
+voice learns your writing voice from real edits over time. Read-only against your existing content; writes only style-guide files plus drafts you review before sending.
 
 **Reads:**
 - **Email** (Gmail or equivalent) — sent emails as bootstrap samples and for diff analysis after you edit a draft externally.
@@ -14,7 +14,7 @@ writing-style learns your writing voice from real edits over time. Read-only aga
 
 **Writes:**
 - **Style files** — `<config-root>/memory/me/voice.md` (refined), `<config-root>/style-{medium}.md` (created/updated as patterns emerge).
-- **Plugin user-context** — `<config-root>/plugins/writing-style.user-context.md` (after `/setup-style`).
+- **Plugin user-context** — `<config-root>/plugins/voice.user-context.md` (after `/setup-style`).
 - **Drafts** — produced inline for review. Drafts that need to be persistent (e.g., email drafts) are written via the appropriate connector (Gmail draft, Drive doc), never sent directly.
 
 **Does not:**
@@ -27,7 +27,7 @@ writing-style learns your writing voice from real edits over time. Read-only aga
 
 - Plugin reference files inside the installed plugin directory.
 - Style files at `<config-root>/memory/me/voice.md` and `<config-root>/style-*.md`.
-- Plugin user-context at `<config-root>/plugins/writing-style.user-context.md` (gitignored — never committed).
+- Plugin user-context at `<config-root>/plugins/voice.user-context.md` (gitignored — never committed).
 
 ## What gets sent off your machine
 
@@ -43,6 +43,6 @@ writing-style learns your writing voice from real edits over time. Read-only aga
 
 Report privately via GitHub Security Advisories:
 
-https://github.com/BrightWayAI/writing-style/security/advisories/new
+https://github.com/BrightWayAI/voice/security/advisories/new
 
 Do not open a public issue for security concerns. We aim to respond within 5 business days.

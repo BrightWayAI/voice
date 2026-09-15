@@ -4,7 +4,7 @@ description: Bootstrap or refine your writing style guides. Pulls writing sample
 
 # /setup-style
 
-Bootstrap interview for writing-style. Captures samples, analyzes patterns, writes initial style files.
+Bootstrap interview for voice. Captures samples, analyzes patterns, writes initial style files.
 
 ---
 
@@ -31,9 +31,9 @@ Then:
 
 ### C — Read existing baseline
 
-Read `<config-root>/memory/me/voice.md` if it exists (created by cortex's `/setup-voice`). If present, this is your baseline — writing-style will refine it, not overwrite. If missing, recommend running `/setup-voice` first for the high-level descriptors, then return here for the granular patterns.
+Read `<config-root>/memory/me/voice.md` if it exists (created by cortex's `/setup-voice`). If present, this is your baseline — voice will refine it, not overwrite. If missing, recommend running `/setup-voice` first for the high-level descriptors, then return here for the granular patterns.
 
-For the rest of this document, **`<config-root>`** refers to the resolved path. This plugin's config file lives at **`<config-root>/plugins/writing-style.user-context.md`**.
+For the rest of this document, **`<config-root>`** refers to the resolved path. This plugin's config file lives at **`<config-root>/plugins/voice.user-context.md`**.
 
 ---
 
@@ -129,10 +129,10 @@ After user confirms:
 
 2. **Create medium-specific files** — `<config-root>/style-email.md`, `<config-root>/style-social.md`, etc., for any medium with 3+ samples.
 
-3. **Write `<config-root>/plugins/writing-style.user-context.md`** — plugin's own config:
+3. **Write `<config-root>/plugins/voice.user-context.md`** — plugin's own config:
 
 ```markdown
-# writing-style user context
+# voice user context
 
 _Last updated: [date]_
 
