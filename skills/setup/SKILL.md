@@ -24,7 +24,7 @@ See `commands/setup-style.md` for the full interview.
 
 ## Pre-flight
 
-Best results when `<config-root>/memory/me/voice.md` already exists from cortex's `/setup-voice` (provides high-level baseline; this plugin refines). If missing, recommend running `/setup-voice` first, then return here for the granular pattern analysis.
+Best results when `<config-root>/memory/me/voice.md` already exists from this plugin's `/setup-voice` (provides high-level baseline; this plugin refines). If missing, recommend running `/setup-voice` first, then return here for the granular pattern analysis.
 
 ## Quick path
 

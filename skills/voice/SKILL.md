@@ -33,7 +33,7 @@ Fires when the user:
 
 ## Pre-flight
 
-Confirm `<config-root>/memory/me/voice.md` exists. If missing, recommend running `/setup-voice` (cortex) or `/setup-style` first. Without voice rules, drafts will be generic.
+Confirm `<config-root>/memory/me/voice.md` exists. If missing, recommend running `/setup-voice` or `/setup-style` first. Without voice rules, drafts will be generic.
 
 ## What this skill is NOT for
 

@@ -1,7 +1,7 @@
 {
   "name": "comms",
-  "version": "0.4.0",
-  "description": "Comms Desk. Create voice-matched drafts (including the weekly roundup post via /post, from research's staged candidates), compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+  "version": "0.5.0",
+  "description": "Comms Desk. Owns /setup-voice (moved from cortex, 2026-09-15) plus voice-matched drafting (including the weekly roundup post via /post, from research's staged candidates), draft-vs-final edit comparison, and durable style-rule updates proposed only after repeated evidence.",
   "author": {
     "name": "BrightWay AI",
     "url": "https://brightwayai.com"
@@ -18,7 +18,7 @@
   "interface": {
     "displayName": "Comms Desk",
     "shortDescription": "Draft in your voice and learn from approved edits",
-    "longDescription": "Create voice-matched drafts (including the weekly roundup post via /post, from research's staged candidates), compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+    "longDescription": "Owns /setup-voice (moved from cortex, 2026-09-15) plus voice-matched drafts (including the weekly roundup post via /post, from research's staged candidates), draft-vs-final edit comparison, and durable style-rule updates proposed only after repeated evidence.",
     "developerName": "BrightWay AI",
     "category": "Writing",
     "capabilities": [

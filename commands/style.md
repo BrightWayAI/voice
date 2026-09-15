@@ -1,5 +1,5 @@
 ---
-description: Draft something in your voice — email, social post, doc, message. Reads `<config-root>/memory/me/voice.md` (canonical voice from cortex setup-voice) plus medium-specific style files (`<config-root>/style-{medium}.md` from voice). Presents as draft for review; never sends directly.
+description: Draft something in your voice — email, social post, doc, message. Reads `<config-root>/memory/me/voice.md` (canonical voice from this plugin's `/setup-voice`) plus medium-specific style files (`<config-root>/style-{medium}.md` from voice). Presents as draft for review; never sends directly.
 ---
 
 # /style [medium] [purpose]
@@ -26,7 +26,7 @@ Then read:
 - `<config-root>/style-{medium}.md` — medium-specific style file if the user is drafting in a known medium
 - `<config-root>/plugins/comms.user-context.md` — plugin config
 
-If `voice.md` is missing, suggest running `/setup-voice` (cortex) or `/setup-style` first.
+If `voice.md` is missing, suggest running `/setup-voice` or `/setup-style` first.
 
 ---
 

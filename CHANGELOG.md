@@ -4,6 +4,17 @@ All notable changes to voice (formerly writing-style) are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.5.0] — `/setup-voice` moves in from Cortex; Comms Desk becomes a starter plugin (2026-09-15)
+
+### Added
+- `commands/setup-voice.md` and `skills/setup-voice/` moved in from cortex (`git mv`). Comms Desk now owns the one-time voice-capture interview and becomes a third Nucleus starter plugin alongside cortex and ops.
+
+### Changed
+- The interview still writes to the Cortex-owned canonical file `<config-root>/memory/me/voice.md` — only the command moved, not the data file's location or contract.
+- `commands/setup-voice.md` Step 0's config-root bootstrap now matches this plugin's own convention (`commands/setup-style.md` Step 0) instead of shelling out to cortex's `scripts/configure_cortex.py`.
+- Updated internal references (`README.md`, `commands/style.md`, `commands/setup-style.md`, `agents/post-assembler.md`, `skills/setup/SKILL.md`, `skills/style/SKILL.md`, `skills/voice/SKILL.md`, `skills/setup-style/SKILL.md`) that previously said "cortex's `/setup-voice`" to reflect in-plugin ownership.
+- Plugin description (`.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`) updated to state Comms Desk now owns `/setup-voice`.
+
 ## [0.4.0] — Research finds, Comms Desk writes (2026-09-15)
 
 ### Added

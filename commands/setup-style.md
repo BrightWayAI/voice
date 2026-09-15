@@ -1,5 +1,5 @@
 ---
-description: Bootstrap or refine your writing style guides. Pulls writing samples, analyzes patterns, writes high-level voice + medium-specific style files. Reads cortex's `/setup-voice` output as baseline if present. Re-run anytime to refresh.
+description: Bootstrap or refine your writing style guides. Pulls writing samples, analyzes patterns, writes high-level voice + medium-specific style files. Reads this plugin's `/setup-voice` output as baseline if present. Re-run anytime to refresh.
 ---
 
 # /setup-style
@@ -32,7 +32,7 @@ Then:
 
 ### C — Read existing baseline
 
-Read `<config-root>/memory/me/voice.md` if it exists (created by cortex's `/setup-voice`). If present, this is your baseline — voice will refine it, not overwrite. If missing, recommend running `/setup-voice` first for the high-level descriptors, then return here for the granular patterns.
+Read `<config-root>/memory/me/voice.md` if it exists (created by this plugin's `/setup-voice`). If present, this is your baseline — voice will refine it, not overwrite. If missing, recommend running `/setup-voice` first for the high-level descriptors, then return here for the granular patterns.
 
 For the rest of this document, **`<config-root>`** refers to the resolved path. This plugin's config file lives at **`<config-root>/plugins/comms.user-context.md`**.
 
@@ -85,7 +85,7 @@ For each sample, capture:
 
 Categorize patterns by medium. If the user has 3+ samples in a medium (e.g., 3+ work emails), that medium gets its own style file.
 
-If `<config-root>/memory/me/voice.md` already exists from cortex's `/setup-voice`: don't duplicate the high-level rules. Add only the granular patterns the bootstrap reveals (e.g., specific opening-line patterns, recurring word choices, sentence-rhythm observations).
+If `<config-root>/memory/me/voice.md` already exists from this plugin's `/setup-voice`: don't duplicate the high-level rules. Add only the granular patterns the bootstrap reveals (e.g., specific opening-line patterns, recurring word choices, sentence-rhythm observations).
 
 ---
 
@@ -126,7 +126,7 @@ The user reviews and corrects. Apply corrections.
 
 After user confirms:
 
-1. **Refine `<config-root>/memory/me/voice.md`** — add cross-medium patterns observed. Don't overwrite existing content; merge. If cortex's `/setup-voice` already filled in voice descriptors and banned phrases, append a new "## Patterns observed from samples" section with the new findings.
+1. **Refine `<config-root>/memory/me/voice.md`** — add cross-medium patterns observed. Don't overwrite existing content; merge. If `/setup-voice` already filled in voice descriptors and banned phrases, append a new "## Patterns observed from samples" section with the new findings.
 
 2. **Create medium-specific files** — `<config-root>/style-email.md`, `<config-root>/style-social.md`, etc., for any medium with 3+ samples.
 
@@ -170,7 +170,7 @@ Summarize:
 
 ## Behavior rules
 
-- **Don't overwrite cortex's voice.md.** Merge or append. The high-level descriptors (3 words, banned phrases) belong to cortex's `/setup-voice`; the granular patterns belong here.
+- **Don't overwrite voice.md.** Merge or append. The high-level descriptors (3 words, banned phrases) belong to this plugin's `/setup-voice`; the granular patterns belong here. The file itself remains a Cortex-owned data contract.
 - **3+ samples threshold for medium-specific files.** Fewer than that → not enough signal, skip the file.
 - **Skip what doesn't apply.** If the user only writes emails, don't manufacture a `style-social.md`.
 - **Idempotent.** Re-running `/setup-style` refreshes patterns from new samples; doesn't reset existing rules.
