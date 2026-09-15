@@ -4,6 +4,11 @@ All notable changes to voice (formerly writing-style) are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.2.2] — Codex adapter synchronization (2026-09-15)
+
+### Fixed
+- Updated the Codex repository handoff after the rename from `writing-style` to `voice`.
+
 ## [0.2.1] — Skill auto-invocation audit (2026-09-15)
 
 Nucleus Operating Model Refactor Phase 3 step 3.7. Ritual and side-effecting

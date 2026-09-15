@@ -1,6 +1,6 @@
 {
   "name": "voice",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
   "author": {
     "name": "BrightWay AI",
