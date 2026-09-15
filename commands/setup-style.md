@@ -98,7 +98,7 @@ Show the analysis as a structured summary:
 ### Cross-medium patterns (will go in <config-root>/voice.md)
 
 - **Greeting:** "Hey [name]," for casual; "Hi [name]," for first-touch work
-- **Sign-off:** "— Derek" (no honorific, just first name)
+- **Sign-off:** "— Alex" (no honorific, just first name)
 - **Sentence length:** short to medium; rarely runs more than 2 commas
 - **Word choices:** prefers "use" over "utilize", "help" over "leverage"
 - **Em-dash usage:** frequent, particularly mid-sentence

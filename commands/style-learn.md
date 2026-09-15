@@ -64,7 +64,7 @@ For each substantive change, fill out the analysis per `references/analysis-temp
 |---|---|---|---|
 | Greeting | "Hi Sarah," | "Hey Sarah," | Tone shift (more casual) |
 | Body | 3 paragraphs | 2 paras + bullet list | Structure (prefers lists) |
-| Sign-off | "Best, Derek" | "— Derek" | Pattern (no honorific) |
+| Sign-off | "Best, Alex" | "— Alex" | Pattern (no honorific) |
 | Word choice | "utilize" | "use" | Voice (simpler words) |
 
 ### Medium

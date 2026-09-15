@@ -9,7 +9,7 @@ Used by `/style-learn` to structure the diff between a draft and the version the
 | Greeting | "Hi Sarah," | "Hey Sarah," | Tone shift (more casual) |
 | Opening | 2 sentences of context | 1 sentence | Structure (more concise) |
 | Body | 3 paragraphs | 2 paragraphs + bullet list | Structure (prefers lists) |
-| Sign-off | "Best, Derek" | "Derek" | Pattern (drops formality) |
+| Sign-off | "Best, Alex" | "Alex" | Pattern (drops formality) |
 | Word choice | "utilize" | "use" | Voice (simpler words) |
 | Em-dash | none | "— but here's the thing" | Style (em-dashes for asides) |
 

@@ -4,6 +4,15 @@ All notable changes to writing-style are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.1.4] — Genericize example sign-off name (2026-09-15)
+
+### Fixed
+- `references/analysis-template.md`, `commands/style-learn.md`,
+  `commands/setup-style.md` — draft/final comparison tables used "Derek" as
+  the example sign-off name, coincidentally matching a real contact from
+  another plugin's docs. Swapped to "Alex" to remove any ambiguity, per the
+  Nucleus Operating Model Refactor privacy audit. No functional change.
+
 ## [0.1.3] — OpenAI host adapter (2026-09-14)
 
 ### Added
