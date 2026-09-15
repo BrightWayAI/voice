@@ -4,6 +4,16 @@ All notable changes to voice (formerly writing-style) are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.4.0] — Research finds, Comms Desk writes (2026-09-15)
+
+### Added
+- New `/post` command (+ `post` skill) — drafts a LinkedIn-ready roundup post plus first-comment sources from research's staged candidates (`<config-root>/staged/roundup/<date>.md`) or pasted material, in the user's voice. Reads `<config-root>/memory/me/voice.md` directly; reads research's `user-context.md` for optional format preferences if research is installed.
+- `agents/post-assembler.md` — moved into this plugin from research. It's the drafting agent behind `/post`; research kept only its candidate-finding subagent (`news-curator`).
+
+### Changed
+- Plugin description updated to reflect roundup-drafting ownership: comms now owns the "writes" half of "Research finds, Comms Desk writes."
+- `post-assembler` now reads `<config-root>/memory/me/voice.md` unconditionally (previously conditional on it existing "alongside" research's user-context) and treats research's `user-context.md` as an optional input rather than a required one, since comms doesn't require research to be installed to draft.
+
 ## [0.3.0] — renamed to comms (2026-09-15)
 
 ### Changed

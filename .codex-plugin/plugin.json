@@ -1,7 +1,7 @@
 {
   "name": "comms",
-  "version": "0.3.0",
-  "description": "Comms Desk. Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+  "version": "0.4.0",
+  "description": "Comms Desk. Create voice-matched drafts (including the weekly roundup post via /post, from research's staged candidates), compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
   "author": {
     "name": "BrightWay AI",
     "url": "https://brightwayai.com"
@@ -18,7 +18,7 @@
   "interface": {
     "displayName": "Comms Desk",
     "shortDescription": "Draft in your voice and learn from approved edits",
-    "longDescription": "Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+    "longDescription": "Create voice-matched drafts (including the weekly roundup post via /post, from research's staged candidates), compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
     "developerName": "BrightWay AI",
     "category": "Writing",
     "capabilities": [
@@ -28,6 +28,7 @@
     "websiteURL": "https://github.com/BrightWayAI/voice",
     "defaultPrompt": [
       "Write this in my voice.",
+      "Draft this week's roundup post.",
       "Learn from these edits.",
       "Review my current style rules."
     ]

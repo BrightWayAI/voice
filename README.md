@@ -1,6 +1,6 @@
 # comms (Comms Desk)
 
-Adaptive voice plugin for Claude. Learns your voice from real edits over time, in addition to whatever you captured up front via cortex's `/setup-voice`.
+Adaptive voice plugin for Claude. Learns your voice from real edits over time, in addition to whatever you captured up front via this plugin's `/setup-voice` (one-time interview; writes to the Cortex-owned canonical file `<config-root>/memory/me/voice.md`).
 
 ## What it does
 
@@ -15,10 +15,10 @@ Adaptive voice plugin for Claude. Learns your voice from real edits over time, i
 
 | Plugin | What it does | How voice integrates |
 |---|---|---|
-| **cortex `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns) | Baseline. comms refines over time on top of this. |
+| **comms `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns); writes to the Cortex-owned canonical file | Baseline. comms's `/style` drafting and `/setup-style` refine over time on top of this. |
 | **bizdev-outreach** | Drafts per-contact outreach | When you edit a draft before sending, run `/style-learn` to feed the pattern back. |
 | **Growth Engine `/draft-touchpoint`** | Drafts relationship outreach | Same — `/style-learn` after you tweak. |
-| **research `post-assembler`** | Drafts LinkedIn roundup posts | Same — `/style-learn` after you publish your edited version. |
+| **comms `/post`** | Drafts the weekly LinkedIn roundup post from research's staged candidates (uses this plugin's `post-assembler` agent) | Reads `<config-root>/memory/me/voice.md` directly. Research finds/stages candidates; comms drafts. Run `/style-learn` after you publish your edited version. |
 | **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by comms). |
 
 ## Install
@@ -34,7 +34,7 @@ Recommended: via the [BrightWayAI marketplace](https://github.com/BrightWayAI/nu
 
 Run `/setup-style`. The interview:
 
-1. Reads `<config-root>/memory/me/voice.md` if it exists (from cortex's `/setup-voice`). Uses it as baseline.
+1. Reads `<config-root>/memory/me/voice.md` if it exists (from this plugin's `/setup-voice`). Uses it as baseline.
 2. Asks you for 5-10 writing samples across mediums (work email, casual email, LinkedIn post, doc, slack DM, etc.) — OR pulls them from Gmail/Drive if connectors are available.
 3. Analyzes patterns: voice, structure, sentence style, common phrases, "what you never do."
 4. Writes/refines `<config-root>/memory/me/voice.md` (high-level) and creates medium-specific files (`style-email.md`, `style-social.md`) if 3+ samples exist for that medium.
@@ -55,6 +55,7 @@ Plus plugin config at `<config-root>/plugins/comms.user-context.md` (edit-detect
 | `/style draft [medium] [purpose]` | Draft something in your voice. Reads voice + medium-specific style files. Presents as draft for review. |
 | `/style-learn` | Analyze a draft-vs-final diff and propose style-guide updates if a pattern emerges. Run after sending an edited version of any draft. |
 | `/style-review` | Audit existing style files. Flags contradictions, unvalidated rules, suggested additions based on recent writing history. Run monthly. |
+| `/post [date]` | Draft the weekly roundup post (+ first-comment sources) from research's staged candidates at `<config-root>/staged/roundup/<date>.md`, or from pasted material. Uses the `post-assembler` agent. |
 
 <!-- OPENAI-SUPPORT:START -->
 ## ChatGPT and Codex
