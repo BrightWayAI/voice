@@ -2,7 +2,7 @@
 
 ## What this plugin does with your data
 
-voice learns your writing voice from real edits over time. Read-only against your existing content; writes only style-guide files plus drafts you review before sending.
+comms learns your writing voice from real edits over time. Read-only against your existing content; writes only style-guide files plus drafts you review before sending.
 
 **Reads:**
 - **Email** (Gmail or equivalent) — sent emails as bootstrap samples and for diff analysis after you edit a draft externally.
@@ -10,11 +10,11 @@ voice learns your writing voice from real edits over time. Read-only against you
 - **Web** (`WebSearch`) — recent LinkedIn posts (if accessible publicly) for bootstrap and diff analysis.
 - **Plugin references** — immutable `references/user-context.template.md` and `references/analysis-template.md`.
 - **Shared user-level config** — `<config-root>/memory/me/voice.md` (canonical voice), `<config-root>/style-*.md` (medium-specific), `<config-root>/memory/me/identity.md` (read-only).
-- **Other plugin drafts** — when you invoke `/style-learn` after editing a draft from Relationships, Delivery, News Curator, etc., the plugin reads the draft + the final edited version for diff analysis.
+- **Other plugin drafts** — when you invoke `/style-learn` after editing a draft from Growth Engine, Client Success, Research, etc., the plugin reads the draft + the final edited version for diff analysis.
 
 **Writes:**
 - **Style files** — `<config-root>/memory/me/voice.md` (refined), `<config-root>/style-{medium}.md` (created/updated as patterns emerge).
-- **Plugin user-context** — `<config-root>/plugins/voice.user-context.md` (after `/setup-style`).
+- **Plugin user-context** — `<config-root>/plugins/comms.user-context.md` (after `/setup-style`).
 - **Drafts** — produced inline for review. Drafts that need to be persistent (e.g., email drafts) are written via the appropriate connector (Gmail draft, Drive doc), never sent directly.
 
 **Does not:**
@@ -27,7 +27,7 @@ voice learns your writing voice from real edits over time. Read-only against you
 
 - Plugin reference files inside the installed plugin directory.
 - Style files at `<config-root>/memory/me/voice.md` and `<config-root>/style-*.md`.
-- Plugin user-context at `<config-root>/plugins/voice.user-context.md` (gitignored — never committed).
+- Plugin user-context at `<config-root>/plugins/comms.user-context.md` (gitignored — never committed).
 
 ## What gets sent off your machine
 

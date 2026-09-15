@@ -37,6 +37,6 @@ Confirm `<config-root>/memory/me/voice.md` exists. If missing, recommend running
 
 ## What this skill is NOT for
 
-- Bulk drafting. One-at-a-time. Use Relationships for prioritized, reviewable touchpoint batches.
+- Bulk drafting. One-at-a-time. Use Growth Engine for prioritized, reviewable touchpoint batches.
 - Auto-sending. Drafts only.
 - Style enforcement on existing content. Use `/style-review` for that.

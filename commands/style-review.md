@@ -13,8 +13,8 @@ Periodic audit of `<config-root>/memory/me/voice.md` and `<config-root>/style-*.
 Resolve `<config-root>` through the shared precedence chain. Read:
 - `<config-root>/memory/me/voice.md`
 - All `<config-root>/style-*.md` files
-- `<config-root>/plugins/voice.history.md` (the pattern-history log from `/style-learn`)
-- `<config-root>/plugins/voice.user-context.md`
+- `<config-root>/plugins/comms.history.md` (the pattern-history log from `/style-learn`)
+- `<config-root>/plugins/comms.user-context.md`
 
 ---
 
@@ -68,7 +68,7 @@ For each:
 
 ## Step 4 — Suggest additions from recent writing
 
-If `claude-cortex` is installed and the user has been actively drafting via `/style` or other plugins, scan cortex memory for any captured PATTERN observations about writing style that haven't made it into style files yet.
+If `cortex` is installed and the user has been actively drafting via `/style` or other plugins, scan cortex memory for any captured PATTERN observations about writing style that haven't made it into style files yet.
 
 For each:
 

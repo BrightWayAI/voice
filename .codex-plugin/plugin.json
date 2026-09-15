@@ -1,7 +1,7 @@
 {
-  "name": "voice",
-  "version": "0.2.3",
-  "description": "Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+  "name": "comms",
+  "version": "0.3.0",
+  "description": "Comms Desk. Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
   "author": {
     "name": "BrightWay AI",
     "url": "https://brightwayai.com"
@@ -16,7 +16,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Voice",
+    "displayName": "Comms Desk",
     "shortDescription": "Draft in your voice and learn from approved edits",
     "longDescription": "Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
     "developerName": "BrightWay AI",

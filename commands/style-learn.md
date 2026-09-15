@@ -14,7 +14,7 @@ This is what makes voice adaptive. Without `/style-learn`, the plugin only knows
 
 Resolve `<config-root>` through the shared precedence chain. Read
 `<config-root>/memory/me/voice.md`, any `<config-root>/style-*.md` files, and
-`<config-root>/plugins/voice.user-context.md` for the confidence threshold
+`<config-root>/plugins/comms.user-context.md` for the confidence threshold
 (default: 2 recurrences) and per-medium tracking opt-ins.
 
 ---
@@ -35,7 +35,7 @@ If the user just sent an email from a Gmail draft I created, ask:
 
 > "Was this the [Gmail draft from earlier today]? Want me to pull the sent version and compare?"
 
-Then via Gmail MCP: search `in:sent` for the matching subject/recipient within the last 24h. Compare against the draft I have in working context (or stored at `<config-root>/plugins/voice.drafts/[id].md` if the plugin caches drafts — proposed for v0.2).
+Then via Gmail MCP: search `in:sent` for the matching subject/recipient within the last 24h. Compare against the draft I have in working context (or stored at `<config-root>/plugins/comms.drafts/[id].md` if the plugin caches drafts — proposed for v0.2).
 
 If neither version is retrievable, fall back to Mode A.
 
@@ -74,7 +74,7 @@ For each substantive change, fill out the analysis per `references/analysis-temp
 [email / social / doc / dm]
 
 ### Pattern history
-- [Looked up in plugin's pattern-history log at <config-root>/plugins/voice.history.md]
+- [Looked up in plugin's pattern-history log at <config-root>/plugins/comms.history.md]
 - This is occurrence: [1st / 2nd / 3rd ...]
 - Prior occurrences (if any): [dates]
 ```
@@ -83,7 +83,7 @@ For each substantive change, fill out the analysis per `references/analysis-temp
 
 ## Step 4 — Decide: capture privately or commit to style files
 
-Check `<config-root>/plugins/voice.history.md` (the pattern-history log — append-only).
+Check `<config-root>/plugins/comms.history.md` (the pattern-history log — append-only).
 
 **First occurrence of a pattern** → capture in history.md but DO NOT update voice.md or style-*.md yet. Tell the user:
 
@@ -107,7 +107,7 @@ If the rule contradicts an existing rule, surface the conflict: "This contradict
 
 ## Step 5 — Update history.md
 
-Regardless of commit decision, append to `<config-root>/plugins/voice.history.md`:
+Regardless of commit decision, append to `<config-root>/plugins/comms.history.md`:
 
 ```markdown
 ## [YYYY-MM-DD HH:MM] [medium] — [contact-or-context]
@@ -136,7 +136,7 @@ Tell the user what was logged:
 - **User confirms every commit.** No silent writes to style files.
 - **Don't apologize for trivial.** If the triage says "no pattern," don't pad the response — just log and move on.
 - **Contradictions surfaced.** If a new rule contradicts an existing one, the user resolves explicitly.
-- **History is append-only.** `<config-root>/plugins/voice.history.md` is never edited; only appended.
+- **History is append-only.** `<config-root>/plugins/comms.history.md` is never edited; only appended.
 - **Privacy.** Diff content is analyzed in-session; only the extracted pattern is logged. Full draft/final text is not stored in history.md.
 
 ## Edge cases

@@ -24,7 +24,7 @@ Then read:
 - `<config-root>/memory/me/identity.md` — for name, title, company (signature material)
 - `<config-root>/memory/me/voice.md` — canonical high-level voice (descriptors, banned phrases, hook patterns)
 - `<config-root>/style-{medium}.md` — medium-specific style file if the user is drafting in a known medium
-- `<config-root>/plugins/voice.user-context.md` — plugin config
+- `<config-root>/plugins/comms.user-context.md` — plugin config
 
 If `voice.md` is missing, suggest running `/setup-voice` (cortex) or `/setup-style` first.
 
@@ -122,6 +122,6 @@ If the user says "good to go" or signals approval:
 
 ## What this is NOT for
 
-- **Mass-mailing.** This is for one-at-a-time drafting. Use Relationships for prioritized, reviewable touchpoint batches.
+- **Mass-mailing.** This is for one-at-a-time drafting. Use Growth Engine for prioritized, reviewable touchpoint batches.
 - **Auto-sending.** Strictly drafts. User reviews and sends.
 - **Style enforcement against existing files.** This drafts new content. To audit existing content use `/style-review`.

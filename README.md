@@ -1,4 +1,4 @@
-# voice
+# comms (Comms Desk)
 
 Adaptive voice plugin for Claude. Learns your voice from real edits over time, in addition to whatever you captured up front via cortex's `/setup-voice`.
 
@@ -15,11 +15,11 @@ Adaptive voice plugin for Claude. Learns your voice from real edits over time, i
 
 | Plugin | What it does | How voice integrates |
 |---|---|---|
-| **cortex `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns) | Baseline. voice refines over time on top of this. |
+| **cortex `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns) | Baseline. comms refines over time on top of this. |
 | **bizdev-outreach** | Drafts per-contact outreach | When you edit a draft before sending, run `/style-learn` to feed the pattern back. |
-| **Relationships `/draft-touchpoint`** | Drafts relationship outreach | Same — `/style-learn` after you tweak. |
-| **news-curator `post-assembler`** | Drafts LinkedIn roundup posts | Same — `/style-learn` after you publish your edited version. |
-| **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by voice). |
+| **Growth Engine `/draft-touchpoint`** | Drafts relationship outreach | Same — `/style-learn` after you tweak. |
+| **research `post-assembler`** | Drafts LinkedIn roundup posts | Same — `/style-learn` after you publish your edited version. |
+| **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by comms). |
 
 ## Install
 
@@ -27,7 +27,7 @@ Recommended: via the [BrightWayAI marketplace](https://github.com/BrightWayAI/nu
 
 ```
 /plugin marketplace add BrightWayAI/nucleus
-/plugin install voice@nucleus
+/plugin install comms@nucleus
 ```
 
 ## First-time setup
@@ -45,7 +45,7 @@ Saved at:
 - `<config-root>/style-social.md` — social-specific
 - `<config-root>/style-{medium}.md` — any other medium
 
-Plus plugin config at `<config-root>/plugins/voice.user-context.md` (edit-detection paths, confidence threshold, per-medium tracking opt-ins).
+Plus plugin config at `<config-root>/plugins/comms.user-context.md` (edit-detection paths, confidence threshold, per-medium tracking opt-ins).
 
 ## Commands
 

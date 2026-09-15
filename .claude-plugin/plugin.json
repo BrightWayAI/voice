@@ -1,7 +1,7 @@
 {
-  "name": "voice",
-  "version": "0.2.3",
-  "description": "Adaptive writing-voice plugin (renamed from writing-style, 2026-09-15). Learns your voice over time from real edits. Draft-first workflow for emails, posts, docs. Detects patterns across 2+ recurrences before committing style-guide updates. Companion to cortex's /setup-voice — one-time capture + continuous learning.",
+  "name": "comms",
+  "version": "0.3.0",
+  "description": "Comms Desk. Adaptive writing-voice plugin (renamed from writing-style, 2026-09-15; renamed from voice, 2026-09-15). Learns your voice over time from real edits. Draft-first workflow for emails, posts, docs. Detects patterns across 2+ recurrences before committing style-guide updates. Companion to cortex's /setup-voice — one-time capture + continuous learning.",
   "author": {
     "name": "BrightWay AI"
   },

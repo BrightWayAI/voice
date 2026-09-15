@@ -4,6 +4,11 @@ All notable changes to voice (formerly writing-style) are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.3.0] — renamed to comms (2026-09-15)
+
+### Changed
+- Renamed from `voice` to `comms` (display name: Comms Desk) as part of the 2026-09-15 Nucleus plugin rename. Old plugin ID/repo name redirects; see marketplace catalog. This plugin was previously renamed in-place from `writing-style` (2026-09-15).
+
 ## [0.2.3] — active-plugin routing cleanup (2026-09-15)
 
 ### Changed
