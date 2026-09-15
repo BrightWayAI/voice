@@ -56,6 +56,26 @@ Plus plugin config at `<config-root>/plugins/writing-style.user-context.md` (edi
 | `/style-learn` | Analyze a draft-vs-final diff and propose style-guide updates if a pattern emerges. Run after sending an edited version of any draft. |
 | `/style-review` | Audit existing style files. Flags contradictions, unvalidated rules, suggested additions based on recent writing history. Run monthly. |
 
+<!-- OPENAI-SUPPORT:START -->
+## ChatGPT and Codex
+
+Writing Style ships as a native OpenAI plugin as well as a Claude plugin. In
+ChatGPT desktop Local Work, enable **Writing Style** and ask naturally or mention
+`@Writing Style`. In Codex, use natural language or the namespaced skills exposed
+by the plugin. Claude slash-command names in this README remain workflow aliases.
+
+All hosts resolve the same `<config-root>` used by Cortex, so Claude, ChatGPT desktop,
+and Codex can share identity, voice, memory, and per-plugin settings without copying
+them. The installed plugin directory is read-only at runtime. See
+[`references/openai-portability.md`](references/openai-portability.md) for capability
+mapping, connector checks, permissions, and honest degraded behavior.
+
+Import the full catalog from
+[`BrightWayAI/nucleus`](https://github.com/BrightWayAI/nucleus); Nucleus is the master
+marketplace, while each plugin remains independently installable.
+<!-- OPENAI-SUPPORT:END -->
+
+
 ## License
 
 MIT.

@@ -1,7 +1,18 @@
 ---
 name: writing-style
-description: Draft or revise anything in your voice — email, reply, LinkedIn/social post, Slack/DM message, intro, follow-up, thank-you note, doc, blurb, bio, comment. Fires whenever you ask to write, draft, compose, reply, respond, answer, send, reword, rewrite, revise, polish, tighten, shorten, punch up, or "put together"/"help me word"/"make this sound like me" ANY human-facing message or prose — including short or one-line ones, and even when you don't say "in my voice" and don't name the medium. Examples: "/style", "draft an email to Sarah", "reply to this", "write a post about X", "respond to Javier", "send a note to the client", "follow up with Heather", "can you word this", "make this sound like me", "tighten this up", "rewrite this nicer". Reads `<config-root>/voice.md` (canonical voice) + `<config-root>/style-{medium}.md` (medium patterns). Drafts go for review; never sent directly. Does NOT fire for code, internal memory/notes, or plain data/lists.
+description: >-
+  Draft or revise anything in your voice: email, reply, social post, Slack or DM message, intro, follow-up, thank-you note, document, blurb, bio, or comment. Fires on requests to write, draft, compose, reply, respond, reword, rewrite, revise, polish, tighten, shorten, or make human-facing prose sound like the user, even when the medium is unstated. Reads shared voice and medium-specific style files. Drafts go for review and are never sent directly. Does not fire for code, internal memory notes, or plain data.
 ---
+
+<!-- OPENAI-ADAPTER:START -->
+## OpenAI host binding
+
+Before acting, read `../../references/openai-portability.md`. That file translates
+host-specific tools, agents, artifacts, scheduling, connectors, and config-root
+access for ChatGPT and Codex. It overrides concrete Claude/Cowork tool names only;
+the workflow, safety gates, and output contract in this skill remain canonical.
+<!-- OPENAI-ADAPTER:END -->
+
 
 See `commands/style.md` for the full drafting workflow.
 

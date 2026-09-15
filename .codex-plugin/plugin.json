@@ -1,0 +1,35 @@
+{
+  "name": "writing-style",
+  "version": "0.1.3",
+  "description": "Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+  "author": {
+    "name": "BrightWay AI",
+    "url": "https://brightwayai.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/BrightWayAI/writing-style",
+  "repository": "https://github.com/BrightWayAI/writing-style",
+  "keywords": [
+    "nucleus",
+    "chatgpt",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Writing Style",
+    "shortDescription": "Draft in your voice and learn from approved edits",
+    "longDescription": "Create voice-matched drafts, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
+    "developerName": "BrightWay AI",
+    "category": "Writing",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/BrightWayAI/writing-style",
+    "defaultPrompt": [
+      "Write this in my voice.",
+      "Learn from these edits.",
+      "Review my current style rules."
+    ]
+  }
+}
