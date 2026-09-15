@@ -19,7 +19,7 @@ Adaptive writing-style plugin for Claude. Learns your voice from real edits over
 | **bizdev-outreach** | Drafts per-contact outreach | When you edit a draft before sending, run `/style-learn` to feed the pattern back. |
 | **lead-engine `/lead-draft`** | Drafts 3-touch DM cadence | Same — `/style-learn` after you tweak. |
 | **news-curator `post-assembler`** | Drafts LinkedIn roundup posts | Same — `/style-learn` after you publish your edited version. |
-| **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by writing-style). |
+| **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by writing-style). |
 
 ## Install
 
@@ -34,13 +34,13 @@ Recommended: via the [BrightWayAI marketplace](https://github.com/BrightWayAI/nu
 
 Run `/setup-style`. The interview:
 
-1. Reads `<config-root>/voice.md` if it exists (from cortex's `/setup-voice`). Uses it as baseline.
+1. Reads `<config-root>/memory/me/voice.md` if it exists (from cortex's `/setup-voice`). Uses it as baseline.
 2. Asks you for 5-10 writing samples across mediums (work email, casual email, LinkedIn post, doc, slack DM, etc.) — OR pulls them from Gmail/Drive if connectors are available.
 3. Analyzes patterns: voice, structure, sentence style, common phrases, "what you never do."
-4. Writes/refines `<config-root>/voice.md` (high-level) and creates medium-specific files (`style-email.md`, `style-social.md`) if 3+ samples exist for that medium.
+4. Writes/refines `<config-root>/memory/me/voice.md` (high-level) and creates medium-specific files (`style-email.md`, `style-social.md`) if 3+ samples exist for that medium.
 
 Saved at:
-- `<config-root>/voice.md` — high-level voice (shared with all drafters)
+- `<config-root>/memory/me/voice.md` — high-level voice (shared with all drafters)
 - `<config-root>/style-email.md` — email-specific (writing-style only)
 - `<config-root>/style-social.md` — social-specific
 - `<config-root>/style-{medium}.md` — any other medium

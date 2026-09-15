@@ -31,7 +31,7 @@ Then:
 
 ### C — Read existing baseline
 
-Read `<config-root>/voice.md` if it exists (created by cortex's `/setup-voice`). If present, this is your baseline — writing-style will refine it, not overwrite. If missing, recommend running `/setup-voice` first for the high-level descriptors, then return here for the granular patterns.
+Read `<config-root>/memory/me/voice.md` if it exists (created by cortex's `/setup-voice`). If present, this is your baseline — writing-style will refine it, not overwrite. If missing, recommend running `/setup-voice` first for the high-level descriptors, then return here for the granular patterns.
 
 For the rest of this document, **`<config-root>`** refers to the resolved path. This plugin's config file lives at **`<config-root>/plugins/writing-style.user-context.md`**.
 
@@ -84,7 +84,7 @@ For each sample, capture:
 
 Categorize patterns by medium. If the user has 3+ samples in a medium (e.g., 3+ work emails), that medium gets its own style file.
 
-If `<config-root>/voice.md` already exists from cortex's `/setup-voice`: don't duplicate the high-level rules. Add only the granular patterns the bootstrap reveals (e.g., specific opening-line patterns, recurring word choices, sentence-rhythm observations).
+If `<config-root>/memory/me/voice.md` already exists from cortex's `/setup-voice`: don't duplicate the high-level rules. Add only the granular patterns the bootstrap reveals (e.g., specific opening-line patterns, recurring word choices, sentence-rhythm observations).
 
 ---
 
@@ -95,7 +95,7 @@ Show the analysis as a structured summary:
 ```markdown
 ## Voice analysis from [N] samples
 
-### Cross-medium patterns (will go in <config-root>/voice.md)
+### Cross-medium patterns (will go in <config-root>/memory/me/voice.md)
 
 - **Greeting:** "Hey [name]," for casual; "Hi [name]," for first-touch work
 - **Sign-off:** "— Alex" (no honorific, just first name)
@@ -125,7 +125,7 @@ The user reviews and corrects. Apply corrections.
 
 After user confirms:
 
-1. **Refine `<config-root>/voice.md`** — add cross-medium patterns observed. Don't overwrite existing content; merge. If cortex's `/setup-voice` already filled in voice descriptors and banned phrases, append a new "## Patterns observed from samples" section with the new findings.
+1. **Refine `<config-root>/memory/me/voice.md`** — add cross-medium patterns observed. Don't overwrite existing content; merge. If cortex's `/setup-voice` already filled in voice descriptors and banned phrases, append a new "## Patterns observed from samples" section with the new findings.
 
 2. **Create medium-specific files** — `<config-root>/style-email.md`, `<config-root>/style-social.md`, etc., for any medium with 3+ samples.
 

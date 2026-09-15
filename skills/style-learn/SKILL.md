@@ -23,7 +23,7 @@ See `commands/style-learn.md` for the full analysis workflow.
 
 ## Pre-flight
 
-Confirm `<config-root>/voice.md` and (if applicable) `<config-root>/style-{medium}.md` exist. Confirm `<config-root>/plugins/writing-style.user-context.md` exists for the confidence threshold.
+Confirm `<config-root>/memory/me/voice.md` and (if applicable) `<config-root>/style-{medium}.md` exist. Confirm `<config-root>/plugins/writing-style.user-context.md` exists for the confidence threshold.
 
 ## What this skill is NOT for
 

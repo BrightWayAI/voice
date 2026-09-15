@@ -12,7 +12,7 @@ This is what makes writing-style adaptive. Without `/style-learn`, the plugin on
 
 ## Step 0 — Resolve config root
 
-Read `~/Documents/.claude-plugin-config-root`. Read `<config-root>/voice.md` and any `<config-root>/style-*.md` files. Read `<config-root>/plugins/writing-style.user-context.md` for the confidence threshold (default: 2 recurrences) and per-medium tracking opt-ins.
+Read `~/Documents/.claude-plugin-config-root`. Read `<config-root>/memory/me/voice.md` and any `<config-root>/style-*.md` files. Read `<config-root>/plugins/writing-style.user-context.md` for the confidence threshold (default: 2 recurrences) and per-medium tracking opt-ins.
 
 ---
 
@@ -89,7 +89,7 @@ Check `<config-root>/plugins/writing-style.history.md` (the pattern-history log 
 **Second+ occurrence** (per confidence threshold) → propose the style update for user confirmation:
 
 > "This is the second time I've seen you change [X] to [Y] (also on [prior date]). Should I add this to your style guide?
-> - **Add to `<config-root>/voice.md`** (cross-medium rule)
+> - **Add to `<config-root>/memory/me/voice.md`** (cross-medium rule)
 > - **Add to `<config-root>/style-email.md`** (email-only)
 > - **Both**
 > - **Skip — keep watching but don't commit yet**"

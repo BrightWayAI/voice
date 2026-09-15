@@ -9,11 +9,11 @@ writing-style learns your writing voice from real edits over time. Read-only aga
 - **Drive** (Google Drive or equivalent, optional) — recent docs as bootstrap samples.
 - **Web** (`WebSearch`) — recent LinkedIn posts (if accessible publicly) for bootstrap and diff analysis.
 - **Plugin references** — `references/user-context.md`, `references/analysis-template.md`.
-- **Shared user-level config** — `<config-root>/voice.md` (canonical voice), `<config-root>/style-*.md` (medium-specific), `<config-root>/identity.md` (read-only).
+- **Shared user-level config** — `<config-root>/memory/me/voice.md` (canonical voice), `<config-root>/style-*.md` (medium-specific), `<config-root>/memory/me/identity.md` (read-only).
 - **Other plugin drafts** — when you invoke `/style-learn` after editing a draft from `bizdev-outreach`, `lead-engine`, etc., the plugin reads the draft + the final edited version for diff analysis.
 
 **Writes:**
-- **Style files** — `<config-root>/voice.md` (refined), `<config-root>/style-{medium}.md` (created/updated as patterns emerge).
+- **Style files** — `<config-root>/memory/me/voice.md` (refined), `<config-root>/style-{medium}.md` (created/updated as patterns emerge).
 - **Plugin user-context** — `<config-root>/plugins/writing-style.user-context.md` (after `/setup-style`).
 - **Drafts** — produced inline for review. Drafts that need to be persistent (e.g., email drafts) are written via the appropriate connector (Gmail draft, Drive doc), never sent directly.
 
@@ -26,7 +26,7 @@ writing-style learns your writing voice from real edits over time. Read-only aga
 ## Where data lives
 
 - Plugin reference files inside the installed plugin directory.
-- Style files at `<config-root>/voice.md` and `<config-root>/style-*.md`.
+- Style files at `<config-root>/memory/me/voice.md` and `<config-root>/style-*.md`.
 - Plugin user-context at `<config-root>/plugins/writing-style.user-context.md` (gitignored — never committed).
 
 ## What gets sent off your machine

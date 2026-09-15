@@ -4,14 +4,14 @@ description: Audit your style files. Flag contradictions, unvalidated rules (no 
 
 # /style-review
 
-Periodic audit of `<config-root>/voice.md` and `<config-root>/style-*.md`. Read-only over the style files; output is a checklist for you to action.
+Periodic audit of `<config-root>/memory/me/voice.md` and `<config-root>/style-*.md`. Read-only over the style files; output is a checklist for you to action.
 
 ---
 
 ## Step 0 — Resolve config root
 
 Read `~/Documents/.claude-plugin-config-root`. Read:
-- `<config-root>/voice.md`
+- `<config-root>/memory/me/voice.md`
 - All `<config-root>/style-*.md` files
 - `<config-root>/plugins/writing-style.history.md` (the pattern-history log from `/style-learn`)
 - `<config-root>/plugins/writing-style.user-context.md`
@@ -101,7 +101,7 @@ Render as a single scannable report:
 [items]
 
 ### Files audited
-- `<config-root>/voice.md` ([N] rules)
+- `<config-root>/memory/me/voice.md` ([N] rules)
 - `<config-root>/style-email.md` ([N] rules)
 - `<config-root>/style-social.md` ([N] rules)
 - [...]

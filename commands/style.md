@@ -1,5 +1,5 @@
 ---
-description: Draft something in your voice — email, social post, doc, message. Reads `<config-root>/voice.md` (canonical voice from cortex setup-voice) plus medium-specific style files (`<config-root>/style-{medium}.md` from writing-style). Presents as draft for review; never sends directly.
+description: Draft something in your voice — email, social post, doc, message. Reads `<config-root>/memory/me/voice.md` (canonical voice from cortex setup-voice) plus medium-specific style files (`<config-root>/style-{medium}.md` from writing-style). Presents as draft for review; never sends directly.
 ---
 
 # /style [medium] [purpose]
@@ -19,8 +19,8 @@ Draft-first writing in your voice.
 Ensure access to `~/Documents`. In Cowork, call `request_cowork_directory(~/Documents)` once if not already granted. In Claude Code (or any environment with direct filesystem access), no mount is needed. Then read `~/Documents/.claude-plugin-config-root` for the config root path.
 
 Then read:
-- `<config-root>/identity.md` — for name, title, company (signature material)
-- `<config-root>/voice.md` — canonical high-level voice (descriptors, banned phrases, hook patterns)
+- `<config-root>/memory/me/identity.md` — for name, title, company (signature material)
+- `<config-root>/memory/me/voice.md` — canonical high-level voice (descriptors, banned phrases, hook patterns)
 - `<config-root>/style-{medium}.md` — medium-specific style file if the user is drafting in a known medium
 - `<config-root>/plugins/writing-style.user-context.md` — plugin config
 

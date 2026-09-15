@@ -23,8 +23,8 @@ See `commands/setup-style.md` for the full interview.
 
 ## Pre-flight
 
-Best results when `<config-root>/voice.md` already exists from cortex's `/setup-voice` (provides high-level baseline; this plugin refines). If missing, recommend running `/setup-voice` first, then return here for the granular pattern analysis.
+Best results when `<config-root>/memory/me/voice.md` already exists from cortex's `/setup-voice` (provides high-level baseline; this plugin refines). If missing, recommend running `/setup-voice` first, then return here for the granular pattern analysis.
 
 ## Quick path
 
-If the user wants to skip the bootstrap and just write rules manually: tell them to edit `<config-root>/voice.md` and create medium-specific files at `<config-root>/style-email.md` etc. directly. The plugin reads them at draft time regardless of how they got there.
+If the user wants to skip the bootstrap and just write rules manually: tell them to edit `<config-root>/memory/me/voice.md` and create medium-specific files at `<config-root>/style-email.md` etc. directly. The plugin reads them at draft time regardless of how they got there.

@@ -39,7 +39,7 @@ Before proposing a commit:
 ```
 **Rule:** [concise description — what to do / what NOT to do]
 **Example:** "[draft phrasing]" → "[final phrasing]"
-**File:** `<config-root>/voice.md` | `<config-root>/style-email.md` | `<config-root>/style-{medium}.md`
+**File:** `<config-root>/memory/me/voice.md` | `<config-root>/style-email.md` | `<config-root>/style-{medium}.md`
 **Section:** [where it fits in the file — e.g., "## Greeting patterns", "## Banned phrases"]
 **Reinforced:** [N] occurrences, prior dates: [...]
 ```
