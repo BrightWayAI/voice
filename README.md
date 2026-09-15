@@ -60,9 +60,9 @@ Plus plugin config at `<config-root>/plugins/comms.user-context.md` (edit-detect
 <!-- OPENAI-SUPPORT:START -->
 ## ChatGPT and Codex
 
-Voice ships as a native OpenAI plugin as well as a Claude plugin. In
-ChatGPT desktop Local Work, enable **Voice** and ask naturally or mention
-`@Voice`. In Codex, use natural language or the namespaced skills exposed
+Comms Desk ships as a native OpenAI plugin as well as a Claude plugin. In
+ChatGPT desktop Local Work, enable **Comms Desk** and ask naturally or mention
+`@Comms Desk`. In Codex, use natural language or the namespaced skills exposed
 by the plugin. Claude slash-command names in this README remain workflow aliases.
 
 All hosts resolve the same `<config-root>` used by Cortex, so Claude, ChatGPT desktop,

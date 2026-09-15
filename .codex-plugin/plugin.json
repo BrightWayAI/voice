@@ -1,14 +1,14 @@
 {
   "name": "comms",
-  "version": "0.5.0",
-  "description": "Comms Desk. Owns /setup-voice (moved from cortex, 2026-09-15) plus voice-matched drafting (including the weekly roundup post via /post, from research's staged candidates), draft-vs-final edit comparison, and durable style-rule updates proposed only after repeated evidence.",
+  "version": "0.5.1",
+  "description": "Create voice-matched drafts, assemble the weekly roundup post from staged research candidates, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
   "author": {
     "name": "BrightWay AI",
     "url": "https://brightwayai.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/BrightWayAI/voice",
-  "repository": "https://github.com/BrightWayAI/voice",
+  "homepage": "https://github.com/BrightWayAI/comms",
+  "repository": "https://github.com/BrightWayAI/comms",
   "keywords": [
     "nucleus",
     "chatgpt",
@@ -18,19 +18,18 @@
   "interface": {
     "displayName": "Comms Desk",
     "shortDescription": "Draft in your voice and learn from approved edits",
-    "longDescription": "Owns /setup-voice (moved from cortex, 2026-09-15) plus voice-matched drafts (including the weekly roundup post via /post, from research's staged candidates), draft-vs-final edit comparison, and durable style-rule updates proposed only after repeated evidence.",
+    "longDescription": "Create voice-matched drafts, assemble the weekly roundup post from staged research candidates, compare drafts with final edits, and propose durable style-rule updates only after repeated evidence.",
     "developerName": "BrightWay AI",
     "category": "Writing",
     "capabilities": [
       "Read",
       "Write"
     ],
-    "websiteURL": "https://github.com/BrightWayAI/voice",
+    "websiteURL": "https://github.com/BrightWayAI/comms",
     "defaultPrompt": [
       "Write this in my voice.",
-      "Draft this week's roundup post.",
-      "Learn from these edits.",
-      "Review my current style rules."
+      "Draft my roundup post.",
+      "Learn from these edits."
     ]
   }
 }

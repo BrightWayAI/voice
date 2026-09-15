@@ -1,6 +1,6 @@
 {
   "name": "comms",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Comms Desk. Adaptive writing-voice plugin (renamed from writing-style, 2026-09-15; renamed from voice, 2026-09-15). Now a Nucleus starter plugin alongside cortex and ops. Owns /setup-voice — the one-time voice-capture interview (moved from cortex, 2026-09-15), writing to the Cortex-owned canonical file `<config-root>/memory/me/voice.md` — plus continuous adaptive learning from real edits. Draft-first workflow for emails, posts, docs — including the weekly roundup post via /post, which drafts from research's staged candidates using the post-assembler agent. Detects patterns across 2+ recurrences before committing style-guide updates. Research finds; Comms Desk writes.",
   "author": {
     "name": "BrightWay AI"
