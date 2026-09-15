@@ -8,9 +8,9 @@ voice learns your writing voice from real edits over time. Read-only against you
 - **Email** (Gmail or equivalent) — sent emails as bootstrap samples and for diff analysis after you edit a draft externally.
 - **Drive** (Google Drive or equivalent, optional) — recent docs as bootstrap samples.
 - **Web** (`WebSearch`) — recent LinkedIn posts (if accessible publicly) for bootstrap and diff analysis.
-- **Plugin references** — `references/user-context.md`, `references/analysis-template.md`.
+- **Plugin references** — immutable `references/user-context.template.md` and `references/analysis-template.md`.
 - **Shared user-level config** — `<config-root>/memory/me/voice.md` (canonical voice), `<config-root>/style-*.md` (medium-specific), `<config-root>/memory/me/identity.md` (read-only).
-- **Other plugin drafts** — when you invoke `/style-learn` after editing a draft from `bizdev-outreach`, `lead-engine`, etc., the plugin reads the draft + the final edited version for diff analysis.
+- **Other plugin drafts** — when you invoke `/style-learn` after editing a draft from Relationships, Delivery, News Curator, etc., the plugin reads the draft + the final edited version for diff analysis.
 
 **Writes:**
 - **Style files** — `<config-root>/memory/me/voice.md` (refined), `<config-root>/style-{medium}.md` (created/updated as patterns emerge).

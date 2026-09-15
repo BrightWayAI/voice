@@ -17,7 +17,7 @@ Adaptive voice plugin for Claude. Learns your voice from real edits over time, i
 |---|---|---|
 | **cortex `/setup-voice`** | One-time capture of high-level voice descriptors (3 words, banned phrases, hook patterns) | Baseline. voice refines over time on top of this. |
 | **bizdev-outreach** | Drafts per-contact outreach | When you edit a draft before sending, run `/style-learn` to feed the pattern back. |
-| **lead-engine `/lead-draft`** | Drafts 3-touch DM cadence | Same — `/style-learn` after you tweak. |
+| **Relationships `/draft-touchpoint`** | Drafts relationship outreach | Same — `/style-learn` after you tweak. |
 | **news-curator `post-assembler`** | Drafts LinkedIn roundup posts | Same — `/style-learn` after you publish your edited version. |
 | **All drafting plugins** | Read voice rules at draft time | Read `<config-root>/memory/me/voice.md` (canonical) + medium-specific `<config-root>/style-{medium}.md` (refined by voice). |
 

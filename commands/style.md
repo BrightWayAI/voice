@@ -16,7 +16,9 @@ Draft-first writing in your voice.
 
 ## Step 0 — Resolve config root and read style files
 
-Ensure access to `~/Documents`. In Cowork, call `request_cowork_directory(~/Documents)` once if not already granted. In Claude Code (or any environment with direct filesystem access), no mount is needed. Then read `~/Documents/.claude-plugin-config-root` for the config root path.
+Resolve `<config-root>` through explicit override → `CORTEX_CONFIG_ROOT` →
+`~/.cortex/config-root` → legacy pointer → default. Request access only to the
+resolved directory when required by the host.
 
 Then read:
 - `<config-root>/memory/me/identity.md` — for name, title, company (signature material)
@@ -120,6 +122,6 @@ If the user says "good to go" or signals approval:
 
 ## What this is NOT for
 
-- **Mass-mailing.** This is for one-at-a-time drafting. For bulk outreach use `weekly-outreach` or `lead-engine`.
+- **Mass-mailing.** This is for one-at-a-time drafting. Use Relationships for prioritized, reviewable touchpoint batches.
 - **Auto-sending.** Strictly drafts. User reviews and sends.
 - **Style enforcement against existing files.** This drafts new content. To audit existing content use `/style-review`.

@@ -12,7 +12,10 @@ This is what makes voice adaptive. Without `/style-learn`, the plugin only knows
 
 ## Step 0 — Resolve config root
 
-Read `~/Documents/.claude-plugin-config-root`. Read `<config-root>/memory/me/voice.md` and any `<config-root>/style-*.md` files. Read `<config-root>/plugins/voice.user-context.md` for the confidence threshold (default: 2 recurrences) and per-medium tracking opt-ins.
+Resolve `<config-root>` through the shared precedence chain. Read
+`<config-root>/memory/me/voice.md`, any `<config-root>/style-*.md` files, and
+`<config-root>/plugins/voice.user-context.md` for the confidence threshold
+(default: 2 recurrences) and per-medium tracking opt-ins.
 
 ---
 

@@ -10,7 +10,7 @@ Periodic audit of `<config-root>/memory/me/voice.md` and `<config-root>/style-*.
 
 ## Step 0 — Resolve config root
 
-Read `~/Documents/.claude-plugin-config-root`. Read:
+Resolve `<config-root>` through the shared precedence chain. Read:
 - `<config-root>/memory/me/voice.md`
 - All `<config-root>/style-*.md` files
 - `<config-root>/plugins/voice.history.md` (the pattern-history log from `/style-learn`)

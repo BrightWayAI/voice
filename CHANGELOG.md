@@ -4,6 +4,12 @@ All notable changes to voice (formerly writing-style) are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [0.2.3] — active-plugin routing cleanup (2026-09-15)
+
+### Changed
+- Routes batch touchpoint work to Relationships and resolves the config root through the shared vendor-neutral chain.
+- Updated setup, learning, and review workflows to use that resolver consistently.
+
 ## [0.2.2] — Codex adapter synchronization (2026-09-15)
 
 ### Fixed
